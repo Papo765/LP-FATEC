@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cocoladora</title>
+	<meta charset="utf-8"/>
+
+	<script type="text/javascript">
+		var num1 = parseFloat(prompt("Digite o primerio numero"));
+		var sinal = prompt("Digite a operação");
+		
+		while((sinal != '+' ) && (sinal != '-') && (sinal != '*') && (sinal != '/')){
+			alert("informe um operador aritmetico");
+			var sinal = prompt("Digite a operação");
+			
+			
+		}
+		var num2 = parseFloat(prompt("Digite o segundo numero"));
+		
+		switch(sinal){
+			case '+':
+				var resultado = num1 + num2;
+				break;
+
+			case '-':
+				var resultado = num1 - num2;
+				break;
+
+			case '*':
+				var resultado = num1 * num2;
+				break;
+
+			case '/':
+				var resultado = num1 / num2;
+				break;
+
+		}
+					
+		
+
+		document.write("O resultado da operação é: " + resultado);
+					
+	</script>
+</head>
+<body>
+
+</body>
+</html>

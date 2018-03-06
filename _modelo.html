@@ -7,14 +7,33 @@
       <title>Página-modelo HTML</title>
 
       <script type="text/javascript">
-      
+         var bissexto = parseInt(prompt("Digite um ano: "));
+
+         if(isNaN(bissexto)){
+            alert("Não é um número"); 
+         }
+
+         if(bissexto % 400 == 0){
+            document.write("é bissexto");
+         }
+         else if(bissexto % 100 == 0){
+            document.write("Não é bissexto");
+         }
+
+         else if(bissexto % 4 == 0){
+            document.write("é bissexto");
+         }
+         else {
+            document.write("não é bissexto");
+         }
+
       </script>
 
    </head>
    
    <body>
-      <h1>Título da página</h1>
-      <p>Isto é um parágrafo.</p>
+      <h1></h1>
+      <p></p>
    </body>
 
 </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+
+		function alteraMaiscula(){
+			var valor = document.getElementById("campo").texto;
+			var novotexto = valor.value.toUpperCase();
+			valor.value = novotexto;	
+		}
+	</script>
+</head>
+<body>
+	<form name="formulario" id="campo">
+		<p>name<input type="text" name="texto" onkeyup="alteraMaiscula()"/></p>
+		<p>bairro<input type="text" name="texto2" onkeyup="alteraMaiscula()"/></p>
+
+		
+	</form>
+</body>
+</html>

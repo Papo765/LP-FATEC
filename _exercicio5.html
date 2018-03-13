@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicio 5</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+		/*
+			Escreva um programa que:
+			-Pergunte ao usuario um número onde deve parar a contagem
+			repita a pergunta enquanto ele não informar um número válido
+
+			-pergunte, em seguida, de quanto em quanto a repetição deve soltar
+			repita a pergunta enquanto ele não informr um númeor válido
+
+			-inicie o loop em 1 e vá até o número informado pelo usuário, saltando de acordo o passo informado ao usuário
+
+			-a cada iteração do loop, escreva com o document.write() o valor do número sendo incrementado 
+		*/
+		cont = 0;
+		do{
+			var numParada = parseInt(prompt('Digite o número que deve parar a contagem'));
+				
+		}while(isNaN(numParada));
+
+		do{
+			var numPulo = parseInt(prompt('Digite o número do intervalo até chegar no número escolhido'));
+				
+		}while(isNaN(numPulo));
+
+		for (var i = 1; i <= numParada; i+= numPulo) {
+			document.write(i + '<br/>');
+			cont++;  
+		}
+		document.write(cont);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

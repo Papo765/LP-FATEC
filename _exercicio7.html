@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicio 7</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript">
+		
+			/*Escreva um programa que conte regressivamente de 1000 a 0,
+			saltando os números múltiplos de 7 ou mútiplo de 11.
+		
+			for (var i = 1000; i >= 0; i--) {
+				if (i % 7 == 0 || i % 11 == 0) {
+					continue;
+				}
+				document.write(i + '<br/>');
+			}
+			*/
+
+		var t = "";
+		for (var i = 1000; i >= 0; i--) {
+			if((i % 7 == 0) || (i % 11 == 0)){
+				t = "";
+				if (i % 7 == 0) {
+					t+="7";
+				}
+				if (i % 11 == 0){
+					if (t == "") {
+						t+="11";
+					}
+					else{
+						t+= " e 11";	
+					}
+				}
+				document.write(i + " é divisível por " + t +'<br/>');
+			}
+			else{
+				
+			}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

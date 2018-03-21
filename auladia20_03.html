@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Vetor</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+		
+		var frutas = ['maçã', 'banana', 'pera', 'mamão'];
+		var carros = Array('Fusca', 'Basília', 'Opala', 'Variant');
+		var mistureba = [19, 'cachorro', undefined, -12.4, null, true];
+
+		var vazio1 = [];
+		var vazio2 = Array();
+
+		document.write('frutas:  ' + frutas.length + '</br>');
+		document.write('carros:  ' + carros.length + '</br>');
+		document.write('mistureba: ' + mistureba.length + '</br>');
+		document.write('vazio1: ' + vazio1.length + '</br>');
+		document.write('vazio2: ' + vazio2.length + '</br>');
+
+		document.write('<hr>');
+
+		for(var i = 0; i<carros.length; i++){
+			document.write(carros[i] + '</br>');
+		}
+
+		document.write('<hr>');
+
+		document.write('O terceiro elemento do vetor carros é: ' + carros[2]);
+
+		document.write('<hr>');
+
+		for(var j = carros.length - 1; j >= 0; j--){
+			document.write(carros[j] + '<br>');
+		}
+
+		carros.push('Fiat 147');
+		vazio1.push(7);
+
+		console.log(carros);
+		console.log(vazio1);
+
+		carros.splice(3, 0, 'Delorean');
+
+		console.log(carros);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

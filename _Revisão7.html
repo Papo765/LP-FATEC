@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Revisão 7</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+		/*
+			Escreva um programa que imprima todos os números primos menores qe 1000.
+		*/
+				var cont = 2;
+		var j = 0;
+		do{
+			var x = 0;	
+			for(var i = cont; i>=0; i--){
+				if (cont % i == 0){
+					x++;
+					console.log(i);
+				}
+			}
+			if (x == 2) {
+				j++;
+				document.write(cont, " ")
+			}
+			if(cont % 50 == 0){
+				document.write("</br>");
+			}
+			cont++;
+		}while(cont < 1000);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

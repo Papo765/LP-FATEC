@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Revisão 5</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+		/*
+			Escreva um programa que receba do usuário um número entre 1 e 7 e retorne o nome
+			do dia da semana correspondente: 1 é domingo e 7 é sábado. Faça a validação do
+			isNaN() para a entrada do usuário e utilize a estrutura switch.
+		*/
+		do{
+			var num = parseInt(prompt("Digite um número de 1 a 7:"));
+		}while(isNaN(num));
+		
+		switch(num){
+			case 1:
+				alert("Domingo");
+				break;
+			case 2:
+				alert("Segunda-Feira");
+				break;
+			case 3:
+				alert("Terça-Feira");
+				break;
+			case 4:
+				alert("Quarta-Feira");
+				break;
+			case 5:
+				alert("Quinta-Feira");
+				break;
+			case 6:
+				alert("Sexta-Feira");
+				break;
+			case 7:	
+				alert("Sabado");
+				break;
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

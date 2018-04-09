@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<title>Revisão 4</title>
+	<script type="text/javascript">
+		/*
+			Escreva uma função que receba uma string e um número e escreva no documento
+			HTML a string, repetindo o número de vezes especificado pelo número. Não é
+			necessário retornar nada.
+		*/
+
+		function repete(p, n){
+			for(i = 0; i <= n-1; i++){
+				document.write(p, "</br>")
+			}
+		}
+		var palavra = prompt("Digite a palavra a ser repetida");
+		var numero = parseInt(prompt("Quantas vezes deseja repetir a palavra?"));
+		repete(palavra, numero);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

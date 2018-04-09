@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Revisão 8</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+		/*
+			Escreva uma função que receba o peso e a altura de uma pessoa e retorne seu Índice
+			de Massa Corpórea (IMC), sabendo que o IMC é igual ao peso dividido pela altura
+			elevada ao quadrado.
+		*/
+		function IMC(peso, altura){
+			var indice = peso / ((altura / 100) * (altura / 100));
+			return indice.toFixed(1);
+		}
+		var p = parseInt(prompt("Digite seu peso"));
+		var a = parseFloat(prompt("Digite sua altura em centimetros"));
+		var imc = IMC(p, a);
+		alert(imc);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

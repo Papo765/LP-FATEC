@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Revisão 2</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+		/*
+			Escreva um programa que imprima todos os números entre 1 e 1000, mas:
+				◦ Se o número da vez for múltiplo de 7, imprima “Fizz” no lugar do número.
+				◦ Se o número da vez for múltiplo de 13, imprima “Buzz” no lugar do número.
+				◦ Se o número da vez for múltiplo de 7 e 13 ao mesmo tempo, imprima “FizzBuzz”
+				no lugar do número.
+		*/
+
+		for (var i = 1; i <= 1000; i++) {
+			if(i % 7 == 0 && i % 13 == 0){
+				document.write("FizzBuzz", "| ");
+			}
+			else if(i % 7 == 0){
+				document.write("Fizz", "| ");
+			}
+			else if(i % 13 == 0){
+				document.write("Buzz", "| ");
+			}
+			else{
+				document.write(i, "| ");
+			}
+			if(i % 40 == 0){
+				document.write("</br>");
+			}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

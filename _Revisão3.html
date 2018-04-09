@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Revisão 3</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+		/*
+			Escreva uma função que receba dois números e retorne: 0, se os dois números forem
+			iguais; -1, se o primeiro número for maior que o segundo; 1, se o segundo número for
+			maior que o primeiro.
+		*/
+		function compara(num1, num2){
+			if (num1 == num2){
+				return 0;
+			}
+			else if(num1 > num2){
+				return -1;
+			}
+			else{
+				return 1;
+			}
+		}
+		var numero1 = parseInt(prompt("Digite o primeiro numero: "));
+		var numero2 = parseInt(prompt("Digite o segundo numero: "));
+		var result = compara(numero1, numero2);
+		alert(result);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

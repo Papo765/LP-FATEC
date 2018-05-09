@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>prova 2</title>
+	<meta charset="utf-8" />
+
+	<script type="text/javascript">
+		
+		function pedagios(){
+			var vetPedagios = [];
+			for(var i = 400; i>= 1; i-- ){
+				if (i % 37 == 0) {
+					vetPedagios.push(i);
+				}
+			}
+			console.log(vetPedagios);
+			return vetPedagios;
+			
+		}
+
+		
+		function vetKm(numKm){
+			var pedagio = pedagios();
+
+			if(pedagio.indexOf(numKm) >= 0){
+				return "Pedágio";
+			}
+
+			switch (numKm) {
+				case 97:
+				case 189:
+				case 282:
+				case 378:
+					return "Posto de recarga para carros elétricos";
+					break;
+				case 150:
+				case 350:
+					return "Posto da polícia rodoviária";
+					break;
+				case 144:
+					return "Integração com trem ultrarrapido";
+					break;
+				case 203:
+					return "Pernoite seguro para caminhoneiros";
+					break;
+				case 310:
+					return "Shopping center";
+					break;
+				case 354:
+					return "Acesso a parque de diversões";
+					break;
+				default:
+					return "Nada aqui. Siga em frente";
+			}
+		}
+		do{
+			var km = parseInt(prompt("Informe o km"));
+		}while(isNaN(km) || km < 0 || km > 400)
+
+		alert(vetKm(km));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

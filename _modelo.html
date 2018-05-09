@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <!-- Ajusta a acentuação -->
+      <meta charset="utf8" />
+      <title>Página-modelo HTML</title>
+
+      <script type="text/javascript">
+        
+        var vet = [];
+        var i = 0;
+        for(;;){
+          var objetovazio = new Object();
+          objetovazio.name = prompt("usuario informe um nome por favor gracinha");
+          if (objetovazio.name == "") {
+            break;
+          }
+          objetovazio.idade = parseInt(prompt("usuario informe uma idade por favor gracinha"))  ;
+          objetovazio.salario = parseInt(prompt("usuario informe um salario por favor gracinha"));
+          vet[i] = objetovazio;
+          i++;
+        }
+        var salariosSomados = 0;
+        var mediaSalarios = 0;
+        var mediaIdade = 0;
+        var somaIdade = 0;
+
+        for(var i = 0; i < vet.length; i++){
+          salariosSomados = vet[i].salario + salariosSomados; 
+          somaIdade= vet[i].idade + somaIdade;
+        }
+
+        for(var i = 0; i < vet.length; i++){
+          mediaSalarios = salariosSomados/vet.length; 
+          mediaIdade = somaIdade/vet.length;
+        }
+        document.write("os salarios somados são: " + salariosSomados);
+        document.write("A média dos salários é: " + mediaSalarios);
+        document.write("A média das idades é: " + mediaIdade);
+
+
+
+      </script>
+        
+
+   </head>
+   
+   <body>
+      <h1>Título da página</h1>
+      <p>Isto é um parágrafo.</p>
+   </body>
+
+</html>salariosalario

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <!-- Ajusta a acentuação -->
+      <meta charset="utf8" />
+      <title>Página-modelo HTML</title>
+
+      <script type="text/javascript">
+         
+         function andar(numAndar, destinacao){
+            switch (numAndar){
+               case 23:
+               case 57:
+               case 100:
+                  destinacao = "Praça de Alimentação";
+                  break;
+               case 22:
+               case 56:
+               case 99:
+                  destinacao = "Shopping center";
+                  break;
+               case 63:
+                  destinacao = "Museu";
+                  break;
+               case 80:
+                  destinacao = "Cinemas";
+                  break;
+               case 6:
+               case 101:
+                  destinacao = "Joalherias";
+                  break;
+               case 108:
+                  destinacao = "Mirante";
+                  break;
+               default:
+                  destinacao = "Disponível";
+            }
+
+            return destinacao;
+         }
+         do{
+            var numeroAndar = parseInt(prompt("Digite o número do andar desejado: "));
+         }while(isNaN(numeroAndar) || numeroAndar % 13 == 0 || numeroAndar > 108 || numeroAndar < 0);
+
+         alert(andar(numeroAndar));
+
+         function todosAndares(){
+            var vetAndares = [];
+            for(var i = 0; vetAndares.length<100; i++){
+               if (i % 13 == 0) {
+                continue;
+               }
+               else{
+                  vetAndares.push(i);
+               }
+            }
+            return vetAndares;
+            
+         }
+ 
+         var retornoTodosAndares = todosAndares();
+
+         for (var i = 1; i <= retornoTodosAndares.length; i++) {
+            document.write(retornoTodosAndares[retornoTodosAndares.length - i] + "</br>");
+         }
+
+      </script>
+
+   </head>
+   
+   <body>
+      <h1>Título da página</h1>
+      <p>Isto é um parágrafo.</p>
+   </body>
+
+</html>
